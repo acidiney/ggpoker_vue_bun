@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@import 'flowbite/src/themes/default';
+@import 'vue3-toastify/dist/index.css';
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+body {
+  background-color: #111827;
+}
