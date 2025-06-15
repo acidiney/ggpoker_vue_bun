@@ -3,7 +3,7 @@
 
 The application consists of two main components:
 
-- **Frontend**: A Vue 3 application with TypeScript, Tailwind CSS, and Vue Router
+- **Frontend**: A Vue 3 application with TypeScript, Tailwind CSS( Flowbite )
 - **Backend**: A Hono-based API server running on Bun
 
 ## Prerequisites
@@ -46,7 +46,7 @@ Once the containers are running, you can access:
 │   ├── Dockerfile        # Frontend Docker configuration
 │   └── package.json      # Frontend dependencies
 │
-├── backend/              # Backend (Hono + Bun)
+├── backend/              # Backend
 │   ├── index.ts          # Entry point
 │   ├── db.ts             # Database operations
 │   ├── Dockerfile        # Backend Docker configuration
@@ -62,11 +62,11 @@ Once the containers are running, you can access:
 - Vue 3.5.13
 - TypeScript
 - Tailwind CSS 4.1.10
-- Pinia 3.0.1 (State Management)
+- Pinia 3.0.1
 - Vue Router 4.5.0
-- Vite 6.2.4 (Build Tool)
+- Vite 6.2.4
 
 ### Backend
-- Hono 4.7.11 (Web Framework)
-- Bun (JavaScript Runtime)
+- Hono 4.7.11
+- Bun
 - TypeScript
