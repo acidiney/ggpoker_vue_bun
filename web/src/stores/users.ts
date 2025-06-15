@@ -48,6 +48,7 @@ export const useUsersStore = defineStore('users', {
       {
         key: 'updated_at',
         value: 'Updated at',
+        date_relative: true,
       },
     ],
   }),

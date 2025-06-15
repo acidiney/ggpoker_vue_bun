@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { format } from 'timeago.js';
 type Props = {
   data: any[]
   theads: any[]
@@ -43,6 +44,9 @@ defineEmits(['select-line'])
                   >
                     <template v-if="column.custom">
                       {{ row[column.key]?.length }}
+                    </template>
+                    <template v-else-if="column.date_relative">
+                      {{ format(row[column.key]) }}
                     </template>
                     <template v-else>
                       {{ row[column.key] }}
