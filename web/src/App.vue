@@ -11,16 +11,16 @@ onMounted(() => {
 
 <template>
   <AppHeader />
-  <div class="bg-gray-50 dark:bg-gray-800">
-    <div class="flex overflow-hidden bg-gray-50 dark:bg-gray-900">
+  <div class="bg-gray-800">
+    <div class="flex overflow-hidden bg-gray-900">
       <div
-        class="fixed inset-0 z-10 hidden bg-gray-900/50 dark:bg-gray-900/90"
+        class="fixed inset-0 z-10 hidden bg-gray-900/90"
         id="sidebarBackdrop"
       ></div>
 
       <div
         id="main-content"
-        class="relative w-full h-full overflow-y-auto bg-gray-50 dark:bg-gray-900"
+        class="relative w-full h-full overflow-y-auto bg-gray-900"
       >
         <RouterView />
       </div>

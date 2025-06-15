@@ -50,15 +50,15 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
     class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full"
   >
     <div class="relative w-full h-full max-w-2xl md:h-auto">
-      <div class="relative bg-white rounded-lg shadow dark:bg-gray-800">
+      <div class="relative bg-gray-800 rounded-lg shadow">
         <!-- Modal header -->
-        <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-700">
-          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+        <div class="flex items-start justify-between p-4 border-b rounded-t border-gray-700">
+          <h3 class="text-xl font-semibold text-white">
             {{ form.id ? 'Update' : 'Add' }} Affiliate
           </h3>
           <button
             type="button"
-            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-700 dark:hover:text-white"
+            class="text-gray-400 bg-transparent hover:bg-gray-700 hover:text-white rounded-lg text-sm p-1.5 ml-auto inline-flex items-center"
             data-modal-hide="affiliate-modal"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -79,7 +79,7 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
               <div class="col-span-8 sm:col-span-4">
                 <label
                   for="nickname"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white"
                   >Nickname / Alias</label
                 >
                 <input
@@ -87,7 +87,7 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
                   id="nickname"
                   name="nickname"
                   v-model="form.nickname"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                  class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 placeholder-gray-400"
                   placeholder="Nickname"
                 />
               </div>
@@ -96,7 +96,7 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
               <div class="col-span-4 sm:col-span-2">
                 <label
                   for="username"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white"
                   >Username</label
                 >
                 <input
@@ -105,7 +105,7 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
                   name="username"
                   v-model="username"
                   disabled
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                  class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 placeholder-gray-400"
                   placeholder="Username"
                   required
                 />
@@ -115,7 +115,7 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
               <div class="col-span-8 sm:col-span-4">
                 <label
                   for="email"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white"
                   >Email</label
                 >
                 <input
@@ -123,7 +123,7 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
                   id="email"
                   name="email"
                   v-model="form.email"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                  class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 placeholder-gray-400"
                   placeholder="you@email.com"
                   required
                 />
@@ -133,7 +133,7 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
               <div class="col-span-4 sm:col-span-2">
                 <label
                   for="base-percentage"
-                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  class="block mb-2 text-sm font-medium text-white"
                   >Base Percentage (%)</label
                 >
                 <input
@@ -142,14 +142,14 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
                   id="base-percentage"
                   name="base-percentage"
                   v-model="form.root_percentage"
-                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                  class="bg-gray-700 border border-gray-600 text-white text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 placeholder-gray-400"
                   placeholder="Ex: 5.0"
                 />
               </div>
 
               <!-- Referenced by + Percentage -->
               <div class="col-span-6">
-                <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <label class="block mb-2 text-sm font-medium text-white">
                   Referenced by + Percentage
                 </label>
 
@@ -162,14 +162,14 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
                     <input
                       type="text"
                       v-model="ref.username"
-                      class="w-1/2 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                      class="w-1/2 bg-gray-700 border border-gray-600 text-white text-sm rounded-lg p-2.5 focus:ring-primary-600 focus:border-primary-600 placeholder-gray-400"
                       placeholder="Referrer Username"
                     />
                     <input
                       type="number"
                       step="0.01"
                       v-model.number="ref.percentage"
-                      class="w-1/3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 focus:ring-primary-600 focus:border-primary-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
+                      class="w-1/3 bg-gray-700 border border-gray-600 text-white text-sm rounded-lg p-2.5 focus:ring-primary-600 focus:border-primary-600 placeholder-gray-400"
                       placeholder="% Commission"
                     />
                     <button
@@ -195,14 +195,14 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
         </div>
 
         <div
-          class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-700"
+          class="flex items-center p-6 space-x-2 border-t border-gray-700 rounded-b"
         >
           <button
             v-if="!form.id"
             type="submit"
             form="edit-user-form"
             @click="() => store.addUser({ ...form, username })"
-            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
           >
             Save all
           </button>
@@ -211,14 +211,14 @@ const username = computed(() => (form.id ? form.username : slugify(form.nickname
             type="submit"
             form="edit-user-form"
             @click="() => store.updateUser(form)"
-            class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
           >
             Update all
           </button>
           <button
             data-modal-hide="affiliate-modal"
             type="button"
-            class="text-gray-500 bg-white border border-gray-200 hover:bg-gray-100 hover:text-gray-900 rounded-lg text-sm px-5 py-2.5 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:bg-gray-600 dark:hover:text-white"
+            class="text-gray-300 bg-gray-700 border border-gray-500 hover:bg-gray-600 hover:text-white rounded-lg text-sm px-5 py-2.5"
           >
             Cancel
           </button>

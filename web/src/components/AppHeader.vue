@@ -1,5 +1,5 @@
 <template>
-  <nav class="z-30 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+  <nav class="z-30 w-full bg-gray-800 border-b border-gray-700">
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center justify-start">
@@ -20,7 +20,7 @@
             <div>
               <button
                 type="button"
-                class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                class="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-600"
                 id="user-menu-button-2"
                 aria-expanded="false"
               >

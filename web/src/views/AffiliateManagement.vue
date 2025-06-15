@@ -23,7 +23,7 @@ onMounted(() => {
     <AppBreadcrumb :breadcrumb="breadcrumb">
       <div class="sm:flex">
         <div
-          class="items-center hidden mb-3 sm:flex sm:divide-x sm:divide-gray-100 sm:mb-0 dark:divide-gray-700"
+          class="items-center hidden mb-3 sm:flex sm:divide-x sm:mb-0 divide-gray-700"
         >
           <form class="lg:pr-3" action="#" method="GET">
             <label for="users-search" class="sr-only">Search</label>
@@ -32,7 +32,7 @@ onMounted(() => {
                 type="text"
                 name="email"
                 id="users-search"
-                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                class="bg-gray-700 border border-gray-600 text-white sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 placeholder-gray-400 focus:ring-primary-500 focus:border-primary-500"
                 placeholder="Search for users"
               />
             </div>
@@ -44,7 +44,7 @@ onMounted(() => {
             data-modal-target="affiliate-modal"
             data-modal-toggle="affiliate-modal"
             @click="() => (currentAffiliate = null)"
-            class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+            class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-800 sm:w-auto"
           >
             <svg
               class="w-5 h-5 mr-2 -ml-1"
