@@ -40,17 +40,17 @@ Once the containers are running, you can access:
 ## Project Structure
 
 ```
-├── web/                  # Frontend (Vue 3)
-│   ├── src/              # Source code
-│   ├── public/           # Static assets
+├── web/                  # Frontend
+│   ├── src/              
+│   ├── public/           
 │   ├── Dockerfile        # Frontend Docker configuration
-│   └── package.json      # Frontend dependencies
+│   └── package.json      
 │
 ├── backend/              # Backend
 │   ├── index.ts          # Entry point
 │   ├── db.ts             # Database operations
 │   ├── Dockerfile        # Backend Docker configuration
-│   └── package.json      # Backend dependencies
+│   └── package.json      
 │
 ├── compose.yml           # Docker Compose configuration
 └── Readme.md             # This file
